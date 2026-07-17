@@ -21,9 +21,9 @@ function updateFlags() {
   console.log(fromCurrency.value);
   console.log(toCurrency.value);
 
-    fromFlag.src = `/img/flags/${fromCurrency.value.toLowerCase()}.png`;
+    fromFlag.src = `img/flags/${fromCurrency.value.toLowerCase()}.png`;
 
-    toFlag.src = `/img/flags/${toCurrency.value.toLowerCase()}.png`;
+    toFlag.src = `img/flags/${toCurrency.value.toLowerCase()}.png`;
 
     
 }
