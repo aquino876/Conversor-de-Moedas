@@ -2,7 +2,6 @@ const amountInput = document.getElementById ('amount-input');
 const amountConverted = document.getElementById('amount-result');
 const fromCurrency = document.getElementById('fromCurrency');
 const toCurrency = document.getElementById('toCurrency');
-const ConvertButton = document.getElementById('convert-button');
 const swapButton = document.getElementById('swap-icons');
 const fromFlag = document.getElementById("fromFlag");
 const toFlag = document.getElementById("toFlag");
