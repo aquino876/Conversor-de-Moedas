@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="conversor.css">
+</head>
+
+<body>
+    <main class="container">
+        <h1>Conversor de Moedas</h1>
+        <p>Taxas em tempo real para suas decisões financeiras</p>
+
+        <div class="converter">
+            <div class="input-group">
+                <label>Você Envia</label>
+                <div class="input-row">
+                    <img id="fromFlag" src="/img/flags/brl.png" class="flag">
+                    
+                    
+
+                 <input type="number" placeholder="0.00" id="amount-input">
+                    <select id="fromCurrency">
+                        <option value="USD">US USD</option>
+                        <option value="EUR">EU EUR</option>
+                        <option value="BRL">BR BRL</option>
+                        
+                    </select>
+                </div>
+            </div>
+
+            <div class="swap-icon" id="swap-icons">⇅</div>
+
+            <div class="input-group">
+                <label>Você Recebe</label>
+                <div class="result-display">
+                    <img id="toFlag" src="/img/flags/usd.png" class="flag">
+                    <input type="number" id="amount-result" readonly>
+                    <select id="toCurrency">
+                        <option value="BRL">BR BRL</option>
+                        <option value="USD">US USD</option>
+                        <option value="EUR">EU EUR</option>
+                        
+                    </select>
+                </div>
+            </div>
+
+            <div class="rate-info">
+                <span id="exchange-rate">Taxa de câmbio</span>
+                
+            </div>
+
+            <button class="convert-btn"id="convert-button" onclick="convertCurrency()">Converter</button>
+        </div>
+    </main>
+
+    <script src="/assets/conversor.js"></script>
+
+
+
+
+</body >
+</html >
